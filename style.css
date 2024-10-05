@@ -83,7 +83,7 @@ a.siteHeader_logo{
 
 .main-content {
     background-color: rgb(255, 250, 243);
-    height: 100vh;
+    height: 82vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -96,8 +96,9 @@ a.siteHeader_logo{
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
 }
+
 
 
 .main-table{
@@ -106,9 +107,18 @@ a.siteHeader_logo{
     /* padding: 10px; */
 }
 
-.main-table th {
+.main-table th{
     background-color: azure;
-    height:50px
+    height:50px;
+}
+
+.main-table th:first-child {
+    background-color: azure;
+    border-top-left-radius: 10px;
+}
+
+.main-table th:last-child{
+    border-top-right-radius: 10px;
 }
 
 .main-table th, .main-table td {
@@ -126,6 +136,74 @@ th.title{
 th.pages {
     width: 10%;
 }
+
+.main-table td {
+    text-align: center;
+    background-color: white;
+}
+
+
+footer{
+    height: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+.book_modal{
+    display: none;
+}
+
+/* Modal Positioning */
+:modal {
+    /* display: none;    */
+    position: absolute;
+    /* display: flex; */
+    width: 400px;
+    height: 300px;
+    top: 50%;
+    bottom: 50%;
+    margin-top: -150px;
+    left: 50%;
+    right: 50%;
+    margin-left: -200px;
+    margin-right: -200px;
+    border-radius: 20px;
+    border: 3px solid rgb(85, 218, 252)
+
+
+}
+
+#bookDialog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: baseline;
+}
+
+input.block, label.block {
+    display: block;
+}
+
+p.absolute {
+    position: absolute;
+    top:150px;
+    left:50px;
+}
+
+
+
+
+/* Modal Styling */
+
+
 
 
 

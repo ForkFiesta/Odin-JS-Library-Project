@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
     <title>Odin Library</title>
 </head>
 
@@ -20,12 +21,10 @@
                 <div class="siteHeader_contents">
                     <div class="siteHeader_search">
                         <div class="siteHeader_searchIcon">
-                            <a href="#" class="siteHeader_searchIcon">
-                                <img src="./img/search-interface-symbol.png" alt="search-symbol">
-                            </a>
+                            <img src="./img/search-interface-symbol.png" alt="search-symbol">
 
                         </div>
-                        
+
                     </div>
                     <div class="siteHeader_logo">
                         <a href="#" class="siteHeader_logo">
@@ -34,7 +33,7 @@
                     </div>
                     <div class="siteHeader_rightElements">
                         <div class="siteHeader_addItem">
-                            <a href="#">
+                            <a href="#" class="addButton">
                                 <img src="./img/plus.png" alt="add icon">
                             </a>
                         </div>
@@ -47,19 +46,60 @@
                 </div>
             </header>
             <div class="main-content">
+                <p class="absolute">click the '+' icon above to add a book</p>
+
                 <div class="main-content-table">
                     <table class="main-table">
                         <tr class="headers">
-                        <th class="title">Title</th>
-                        <th class = 'pages'>Pages</th>
-                        <th class="author">Author</th>
-                        <th class="completed">Completed?</th>
-                        <th class="remove">Remove</th>
+                            <th class="title">Title</th>
+                            <th class='pages'>Pages</th>
+                            <th class="author">Author</th>
+                            <th class="completed">Completed?</th>
+                            <th class="remove">Remove</th>
                         </tr>
+                        <!-- <tr>
+                            <td>This is an item</td>
+                            <td>This is an item</td>
+                            <td>This is an item</td>
+                            <td>This is an item</td>
+                            <td>This is an item</td>
+                        </tr> -->
                     </table>
                 </div>
             </div>
-            <footer></footer>
+            <div class="book_modal">
+                <dialog id="bookDialog">
+                    <form method="dialog">
+                        <div class="modalContent">
+                            <p>
+                                <label class="block" for="bookTitle">Book Title:</label>
+                                <input  class="block" type="text" name="bookTitle" id="bookTitle" style="width: 200px;" />
+                            </p>
+                            <p>
+                                <label class="block" for="bookAuthor">Book Author:</label>
+                                <input class="block" type="text" name="bookAuthor" id="bookAuthor" style="width: 200px;" />
+                            </p>
+                            <p>
+                                <label class="block" for="bookPages"># Pages:</label>
+                                <input class="block"type="number" name="bookPages" id="bookPages" style="width: 50px;" />
+                            </p>
+                            <p>
+                                Have you read?
+                                <input type="radio" id="completionChoice1" name="complete" value="yes" />
+                                <label for="completionChoice1">Yes</label>
+                                <input type="radio" id="completionChoice2" name="complete" value="no" />
+                                <label for="completionChoice2">No</label>
+                            </p>
+                            <div>
+                                <button id="cancel" type="reset">Cancel</button>
+                                <button class="submit">Submit</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </dialog>
+            </div>
+            <footer>Raul Resendez ©</footer>
         </div>
     </div>
 
