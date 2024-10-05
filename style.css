@@ -50,6 +50,12 @@ a.siteHeader_logo{
 
 }
 
+.siteHeader_rightElements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .siteHeader_search{
     display: flex;
     flex-direction: row;
@@ -58,7 +64,10 @@ a.siteHeader_logo{
     gap:10px
 }
 
-
+.siteHeader_addItem img{
+    height: 30px;
+    margin-right: 20px;
+}
 
 .siteHeader_searchIcon img{
     height: 30px;
@@ -86,17 +95,36 @@ a.siteHeader_logo{
     /* margin-top: 70px; */
     display: flex;
     justify-content: center;
-    width: 100%
+    width: 100%;
+    margin-top: 20px;
 }
 
+
 .main-table{
-    width: 100%;
-    padding: 10px;
+    width: 80%;
+    border-collapse: collapse;
+    /* padding: 10px; */
 }
 
 .main-table th {
     background-color: azure;
     height:50px
+}
+
+.main-table th, .main-table td {
+    border: 1px solid black;
+}
+
+th {
+    width: 20%;
+}
+
+th.title{
+    width: 40%;
+}
+
+th.pages {
+    width: 10%;
 }
 
 
