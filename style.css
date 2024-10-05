@@ -137,6 +137,10 @@ th.pages {
     width: 10%;
 }
 
+tr {
+    height: 50px;
+}
+
 .main-table td {
     text-align: center;
     background-color: white;

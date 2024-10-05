@@ -107,7 +107,23 @@ const readOutLibrary = (book) => {
   }
 
 
+//   const books = [
+//     ['The Left Hand of Darkness', 'Ursula K. Le Guin', 304],
+//     ['Gender Trouble', 'Judith Butler', 272],
+//     ['Stone Butch Blues', 'Leslie Feinberg', 320],
+//     ['Sister Outsider', 'Audre Lorde', 192],
+//     ['Redefining Realness', 'Janet Mock', 288],
+//     ['Fun Home', 'Alison Bechdel', 240],
+//     ['The Argonauts', 'Maggie Nelson', 160],
+//     ['Giovanni’s Room', 'James Baldwin', 176],
+//     ['Transgender History', 'Susan Stryker', 208],
+//     ['We Have Always Been Here', 'Samra Habib', 240]
+//   ];
 
+books.forEach(book => {
+    Book(book[0], book[2], book[1], 'yes');
+    
+});
 
 //   for (let i = 0; i < removeButton.length; i++){
 //     removeButton[i].addEventListener("click", ()=>{
