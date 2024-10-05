@@ -60,6 +60,9 @@ function Book(title, pages, author, read) {
 
 const addBookToLibrary = () => {
   myLibrary.push(this);
+  myLibrary.forEach(book=>{
+    console.log(book);
+  })
   readOutLibrary(this);
 
 };
@@ -120,10 +123,10 @@ const readOutLibrary = (book) => {
 //     ['We Have Always Been Here', 'Samra Habib', 240]
 //   ];
 
-books.forEach(book => {
-    Book(book[0], book[2], book[1], 'yes');
+// books.forEach(book => {
+//     Book(book[0], book[2], book[1], 'yes');
     
-});
+// });
 
 //   for (let i = 0; i < removeButton.length; i++){
 //     removeButton[i].addEventListener("click", ()=>{
