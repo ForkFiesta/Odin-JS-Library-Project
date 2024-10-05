@@ -5,43 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="javascript.js" defer></script>
-    <title>Library</title>
+    <title>Odin Library</title>
 </head>
 
 <body>
-    
-    <div class="container">
-        <div class="sidebar">
-            <h1>Library</h1>
-        </div>
-        <form class='book-form'>
-            <label for="title">
-                <p>Title:</p>
-                <input type="text" name="title" id="title"/>
-            </label>
-            <label for="author">
-                <p>Author:</p>
-                <input type="text" name="author" id="author"/>
-            </label>
-            <label for="pages">
-                <p># Pages:</p>
-                <input type="number" name="pages" id="pages"/>
-            </label>
-            <label for="read">
-                <p>Have you read this?</p>
-                <div class="radio">
-                    <p>Yes</p>
-                    <input type="radio" name="radio" value="yes"/>
-                    <p>No</p>
-                    <input type="radio" name="radio" value="no"/>
-                </div>
-                <div class="submit-button">
-                    <input type="submit" value="Submit"/>
-                </div>
-            </label>
+    <div class="content" id="bodycontainer">
+        <div class="siteHeader">
+            <header>
+                <a href="#" class="siteheader_topContainer">
+                    <div class="siteheader_topContainer">
+                        <p>Get new suggestions on popular reads ></p>
+                    </div>
+                </a>
+                <div class="siteHeader_contents">
+                    <div class="siteHeader_search">
+                        <div class="siteHeader_searchIcon">
+                            <a href="#" class="siteHeader_searchIcon">
+                                <img src="./img/search-interface-symbol.png" alt="search-symbol">
+                            </a>
 
-        </form>
+                        </div>
+                        
+                    </div>
+                    <div class="siteHeader_logo">
+                        <a href="#" class="siteHeader_logo">
+                            <p><strong>My</strong>Library</p>
+                        </a>
+                    </div>
+                    <div class="siteHeader_profileIcon">
+                        <a href="#" class="siteHeader_profileIcon">
+                            <img src="./img/user.png" alt="user-icon">
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="main-content">
+                <div class="main-content-table">
+                    <table class="main-table">
+                        <tr>
+                        <th>Title</th>
+                        <th>Pages</th>
+                        <th>Author</th>
+                        <th>Completed?</th>
+                        <th>Remove</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <footer></footer>
+        </div>
     </div>
 
 </body>
